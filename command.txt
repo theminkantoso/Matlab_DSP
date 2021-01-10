@@ -1,0 +1,23 @@
+commandhistory => lịch sử
+chạy file trên command => viết thẳng tên không đuôi .m
+help + tên hàm => sử dụng khi quên hàm
+plot(A) => vẽ A ra đồ thị
+C = A(2,:) => gán hàng 2 cho ma trận C => slicing
+-Code
+
+khai báo vector(code) a = 1:5 => vecto chiều dài 5
+b = 10 : -2:2 => 10 8 6 4 2 => step -2
+A= {2 3 ; 3 2} => ma trận 2*2 với các giá trị như trên
+khi không có ";" cuối dòng => chạy kq ra command line (có thì sẽ không chạy) 
+
+-double click workspace => rõ thông tin từng biến
+
+tự học matlab =>cody
+
+- function m = tong(a,b)
+m = a + b
+end
+cài file .m function tên phải trùng tên hàm và đặt cùng folder file sử dụng hàm
+
+** ý 4: tạo mt ngẫu nhiên rồi chỉnh đường chéo = 4
+MATLAB chỉ số tính từ 1, không phải 0;

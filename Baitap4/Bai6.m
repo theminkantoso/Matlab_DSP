@@ -1,0 +1,22 @@
+clf;
+n = -10:10;
+a=[1 1 0]; 
+b=[1 -4 3]; 
+h=impz(a,b,n); 
+subplot(2,2,1);
+stem(n,h); 
+subplot(2,2,2);
+zplane(b,a);
+grid;
+title('Gian do');
+subplot(2,2,3);
+[h,w] = freqz(b,a,n);
+%???
+X = fft(h);
+pho_bien_do = abs(X);
+stem(n,pho_bien_do);
+u=[zeros(1,10) 1 ones(1,10)];
+x = cos(3.14* 1/3 * n);
+[y1, n1] = sig_conv( h, n,x,n);
+subplot(2,2,4);
+stem(n1, y1);

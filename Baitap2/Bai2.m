@@ -1,0 +1,21 @@
+n1 = -6: 6;
+u1 = [zeros(1,(13-4)) ones(1,4)];
+n2 = -6: 6;
+u2 = [ones(1,13-5) zeros(1,5)];
+n = min(min(n1), min(n2)) : max(max(n1), max(n2));
+y1 = zeros(1,length(n));
+y2 = zeros(1,length(n));
+y1((n>=min(n1))& (n<=max(n1))==1) = u1;
+y2((n>=min(n2)) & (n<=max(n2))==1) = u2;
+y = y1 .* y2;
+subplot(4,1,1);
+stem(n,y1);
+subplot(4,1,2);
+stem(n,y2);
+subplot(4,1,3);
+stem(n,y);
+subplot(4,1,4);
+y3 = y1 .* 3;
+%3u(n-1);
+stem(n,y3);
+

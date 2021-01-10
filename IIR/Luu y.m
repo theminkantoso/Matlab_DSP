@@ -1,0 +1,1 @@
+luu y xem lai lenh freqz, butter, cheby1 va doc ky help ve cac bien the mac dinh 

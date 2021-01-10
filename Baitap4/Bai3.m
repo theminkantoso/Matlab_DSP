@@ -1,0 +1,20 @@
+clf;
+n = -25:25;
+b=[1 1 0]; 
+a=[1 -2 1]; 
+h=impz(b,a,n); 
+subplot(2,2,1);
+stem(n,h); 
+u1 = [zeros(1,25) 1 ones(1,25)];
+[y1, n1] = sig_conv(h, n, u1, n);
+subplot(2,2,2);
+stem(n1,y1);
+x1 = 2*sin(0.01*3.14*n);
+[y2,n2] = sig_conv(h,n,x1,n);
+subplot(2,2,3);
+stem(n2,y2);
+subplot(2,2,4);
+zplane(b,a);
+grid;
+title('Gian do');
+
