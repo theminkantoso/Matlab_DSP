@@ -1,3 +1,5 @@
+check lại ngày 12/1
+
 commandhistory => lịch sử
 chạy file trên command => viết thẳng tên không đuôi .m
 help + tên hàm => sử dụng khi quên hàm
